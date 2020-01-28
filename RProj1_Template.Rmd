@@ -1,6 +1,6 @@
 ---
 title: "R Project 1 - Hello R"
-author: "Skylar Burris"
+author: "Skylar B Burris"
 date: "1/23/2020"
 output: html_document
 ---
