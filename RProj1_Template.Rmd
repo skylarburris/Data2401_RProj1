@@ -21,12 +21,16 @@ _This has 1846 rows, but it does not give you the number of columns.The variable
 ### Exercise 2
 
 
+First let's plot the data in the dino dataset:
+
 ```{r plot-dino, fig.height=3, fig.width=6}
 dino_data <- datasaurus_dozen %>%
   filter(dataset == "dino")
 ggplot(data = dino_data, mapping = aes(x = x, y = y)) +
   geom_point()
 ```
+
+And next calculate the correlation between `x` and `y` in this dataset:
 
 ```{r cor-dino}
 dino_data %>%
@@ -35,17 +39,24 @@ dino_data %>%
 
 ### Exercise 3
 
-(Add code and narrative as needed. Note that the R chunks are labeled with `plot-star` and `cor-star` to provide spaces to place the code for plotting and calculating the correlation coefficient. To finish, remember to clean up the narrative by removing these instructions.)
 
-Blah blah blah...
+First let's plot the data in the star dataset:
 
-```{r plot-star}
+```{r plot-star, fig.height=3, fig.width=6}
+star_data <- datasaurus_dozen %>%
+  filter(dataset == "star")
+ggplot(data = star_data, mapping = aes(x = x, y = y)) +
+  geom_point()
 ```
 
-I'm some text, you should replace me with more meaningful text...
+And next calculate the correlation between `x` and `y` in this dataset:
 
 ```{r cor-star}
+star_data %>%
+  summarize(r = cor(x, y))
 ```
+
+_This value is differnet to the r of dino by .0015._
 
 ### Exercise 4
 
