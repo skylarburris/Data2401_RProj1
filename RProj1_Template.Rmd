@@ -16,6 +16,7 @@ library(datasauRus)
 ### Exercise 1
 
 (Type your answer to Exercise 1 here. This exercise does not require any R code. **Remove notes like this in your final product**)
+_This has 1846 rows, but it does not give you the number of columns.The variables included in the data frame are 'dataset', 'x', and 'y'._
 
 ### Exercise 2
 
